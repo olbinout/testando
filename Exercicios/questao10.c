@@ -30,7 +30,7 @@ int main (){
 
     printf("Moedas da Sala 3: ");
     for (i = 0; i < tamanho3; i++){
-        printf("%d ", ponteiro_salas[2][i]);
+        printf("%d - ", ponteiro_salas[2][i]);
     }
     printf("\n");
 
