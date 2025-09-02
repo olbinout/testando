@@ -6,34 +6,18 @@ int main (){
     int sala2[] = {50, 100};
     int sala3[] = {5, 5, 5, 10};
 
-    int *ponteiro_salas[3];
-    ponteiro_salas[0] = sala1;
-    ponteiro_salas[1] = sala2;
-    ponteiro_salas[2] = sala3;
+    int *ponteiro_salas[3] = {sala1, sala2 ,sala3};
+    int tamanho[3] = {sizeof(sala1) / sizeof(sala1[0]), sizeof(sala2) / sizeof(sala2[0]), sizeof(sala3) / sizeof(sala3[0])};
+    
+    int i, c;
 
-    int tamanho1 = sizeof(sala1) / sizeof(sala1[0]);
-    int tamanho2 = sizeof(sala2) / sizeof(sala2[0]);
-    int tamanho3 = sizeof(sala3) / sizeof(sala3[0]);
-    int i;
-
-    printf("Moedas da Sala 1: ");
-    for (i = 0; i < tamanho1; i++){
-        printf("%d ", ponteiro_salas[0][i]);
-    }
-    printf("\n");
-
-    printf("Moedas da Sala 2: ");
-    for (i = 0; i < tamanho2; i++){
-        printf("%d ", ponteiro_salas[1][i]);
-    }
-    printf("\n");
-
-    printf("Moedas da Sala 3: ");
-    for (i = 0; i < tamanho3; i++){
-        printf("%d - ", ponteiro_salas[2][i]);
-    }
-    printf("\n");
-
+    for (i = 0; i < 3; i++){
+        printf("Moedas na Sala %d: ", i + 1);
+        for (c = 0; c < tamanho[i]; c++){
+            printf("%d ", ponteiro_salas[i][c]);
+        }
+        printf("\n");
+    }  
+    
     return 0;
 }
-
