@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main (){
-
+    // Utilizando o sizeof
     int sala1[] = {10, 20, 5};
     int sala2[] = {50, 100};
     int sala3[] = {5, 5, 5, 10};
