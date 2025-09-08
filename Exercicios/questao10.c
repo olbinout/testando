@@ -16,7 +16,7 @@ int main (){
     for (i = 0; i < 3; i++){
         printf("Moedas na Sala %d: ", i + 1);
         for (c = 0; c < tamanho[i]; c++){
-            printf("%d ", ponteiro_salas[i][c]);
+            printf("%d ", *(ponteiro_salas[i] + c));
         }
         printf("\n");
     }  
