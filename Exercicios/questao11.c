@@ -17,12 +17,12 @@ int main (){
     for (int c = 0; c < 3; c++){
         *invetario[c] = *(invetario[c]) - 1;
     }
-    
+
     printf("\n");
     printf("Invetário após o uso: \n");
     printf("Balas: %d\n", balas[0]);
     printf("Granadas: %d\n", granadas[0]);
     printf("Foguetes: %d\n", foguetes[0]);
-
+    
     return 0;
 }
