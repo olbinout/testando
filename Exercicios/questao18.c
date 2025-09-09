@@ -8,6 +8,7 @@ int main (){
 
     if (vida_inimigo == NULL){ // Verificando se deu certo ou não a alocação.
         printf("Erro: memória insuficiente!\n");
+        return 1; // Boa prática para quando acontece algum erro.
     } else {
         printf("Acerto: memória suficiente.\n");
     }
@@ -17,6 +18,9 @@ int main (){
 
     *vida_inimigo -= 35;
     printf("O jogador atacou! Vida restante do inimigo: %d\n", *vida_inimigo);
+
+    // Também uma boa prática liberar a memória alocada depois que finalizar o programa.
+    free(vida_inimigo);
 
     return 0;
 }
