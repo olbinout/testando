@@ -32,6 +32,9 @@ int main (){
         printf("\n");
     }
 
+    free(level_map);
+    level_map = NULL;
+    
     return 0;
 }
 
