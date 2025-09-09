@@ -18,12 +18,12 @@ int main (){
 
     for (int i = 0; i < n_inimigos; i++){
         printf("Digite o nome do ID do inimigo %d: ", i + 1);
-        scanf("%d", &ponteiro_onda[i]);
+        scanf("%d", (ponteiro_onda + i));
     }
 
     printf("Foi confirmado os ID's dos inimigos.\nAqui estão eles: ");
     for (int i = 0; i < n_inimigos; i++){
-        printf("%d / ", ponteiro_onda[i]);
+        printf("%d  ", *(ponteiro_onda + i));
     }
 
     free(ponteiro_onda);
