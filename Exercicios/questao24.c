@@ -34,7 +34,7 @@ int main() {
 
     for (i = 0; i < l; i++){
         for (j = 0; j < c; j++){
-            printf("(0) para VOID / (1) para TIJOLO / (2) para OUTRO: ");
+            printf("(0) para VOID / (1) para TIJOLO / (2) para MOEDA: ");
             scanf("%d", &mapa[i][j]);
 
             if (mapa[i][j] == 1){
