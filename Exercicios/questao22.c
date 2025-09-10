@@ -9,7 +9,7 @@ int main (){
     printf("Insira o valor de inimigos para a onda: ");
     scanf("%d", &n_inimigos);
 
-    ponteiro_onda = (int *) malloc( n_inimigos * sizeof(int));
+    ponteiro_onda = (int *) malloc(n_inimigos * sizeof(int));
 
     if (ponteiro_onda == NULL){
         printf("Erro: alocação de memória não foi suficiente!\n");
