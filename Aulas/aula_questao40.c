@@ -14,7 +14,7 @@ int main (){
 
     estudante alunos_questoes[n];
 
-    FILE *file = fopen ("./alunos.txt", "w");
+    FILE *file = fopen ("./arquivo_aula40.txt", "w");
 
     for (int c = 0; c < n; c++){
         printf("Insira o nome e depois a nota do aluno %d: ", c + 1);
