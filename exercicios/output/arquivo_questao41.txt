@@ -1,0 +1,4 @@
+
+Evento registrado: Aniversário
+Evento registrado: Dia_dos_pais
+Evento registrado: Dia_da_avaliação
